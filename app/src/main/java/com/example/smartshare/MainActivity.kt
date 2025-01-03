@@ -59,6 +59,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent.createChooser(intent, "Share to :"))
         }
 
+        //find recyclerview btn and set onclick
+
+        val recyclerViewBtn: Button = findViewById(R.id.btnRecyclerViewDemo)
+        recyclerViewBtn.setOnClickListener {
+            val intent = Intent(this, HobbiesActivity :: class.java)
+            startActivity(intent)
+        }
+
     }
 
 }
